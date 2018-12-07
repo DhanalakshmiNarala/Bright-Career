@@ -1,0 +1,12 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+    <div class="container" style="padding-top: 70px; color: darkblue">
+        <center>
+            <p style="color: darkgoldenrod; font-size: 25px">Based on your skill set the following careers will be best for you</p>
+            <p style="font-size: 30px">1. {{result_1 | capfirst}} development  <br>
+                2. {{result_2 | capfirst}} development <br>
+                3. {{result_3 | capfirst}} development </p>
+        </center>
+    </div>
+{% endblock %}

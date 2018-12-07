@@ -1,0 +1,47 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+    <div class="container" style="padding: 50px;">
+        <form action="{% url 'result'%}" method="POST"> 
+            {% csrf_token %}
+            <h3 style="text-align:center;">Resume</h3>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Education</label>
+                <textarea name="education" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Work Experience</label>
+              <textarea name="work_experience" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Areas of Interest</label>
+              <textarea name="areas_of_interest" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Projects (Only specify technologies that are used)</label>
+                <textarea name="projects" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Technical skills</label>
+                <textarea name="technical_skills" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Publications and Academic Accolades</label>
+                <textarea name="publications" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Participation & Presentations in Technical Events and Training programs</label>
+                <textarea name="technical_events" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Extra & Co-Curricular Activities</label>
+                <textarea name="extra_curricular_activities" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Personal Information</label>
+                <textarea name="personal_info" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Resume</button>
+          </form>
+    </div>
+{% endblock %}
