@@ -1,2 +1,2 @@
 # Bright-Career
-A Website which will give the user best suitable career based on the resume submitted.
+It is a website which will give the user best suitable career role based on the resume submitted by him.
